@@ -20,6 +20,8 @@ public class PlayerController : MonoBehaviour
 
     /* If the player is created */
     public static bool playerCreated;
+
+    public string nextPlaceName;
     void Start()
     {
         animator = GetComponent<Animator>(); // Get the Animator component

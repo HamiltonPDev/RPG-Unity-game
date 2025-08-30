@@ -9,10 +9,13 @@ public class GoToNewPlace : MonoBehaviour
 {
     public string newPlaceName = "New Scene Name here";
 
+    public string goToPlaceName;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag.Equals("Player"))
         {
+            FindFirstObjectByType<PlayerController>().nextPlaceName = goToPlaceName;
             SceneManager.LoadScene(newPlaceName);
         }
     }

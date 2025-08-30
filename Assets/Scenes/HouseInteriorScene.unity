@@ -4889,6 +4889,11 @@ PrefabInstance:
       propertyPath: newPlaceName
       value: MainScene
       objectReference: {fileID: 0}
+    - target: {fileID: 4918772514083433629, guid: 56e23d57aca934a7faa84b994a033662,
+        type: 3}
+      propertyPath: goToPlaceName
+      value: HamiltonHouseFront
+      objectReference: {fileID: 0}
     - target: {fileID: 7611167286700950825, guid: 56e23d57aca934a7faa84b994a033662,
         type: 3}
       propertyPath: m_Name
@@ -12818,6 +12823,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2954655047124599577, guid: 9c91073acb123430ba96ce644d32f080,
+        type: 3}
+      propertyPath: placeName
+      value: HamiltonHouse
+      objectReference: {fileID: 0}
     - target: {fileID: 2954655047124599577, guid: 9c91073acb123430ba96ce644d32f080,
         type: 3}
       propertyPath: facingDirection.y

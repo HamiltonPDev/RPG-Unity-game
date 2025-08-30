@@ -10,12 +10,15 @@ public class SpawnZone : MonoBehaviour
     private CameraFollow theCamera;
     public Vector2 facingDirection = Vector2.zero;
 
+    // The name of the place this zone corresponds to
+    public string placeName;
+
     void Start()
     {
         thePlayer = FindFirstObjectByType<PlayerController>();
         theCamera = FindFirstObjectByType<CameraFollow>();
 
-
+        if (!thePlayer.nextPlaceName.Equals(placeName)) return; // If the player is not coming to this place, do nothing
 
         thePlayer.transform.position = this.transform.position;
         theCamera.transform.position = new Vector3(
