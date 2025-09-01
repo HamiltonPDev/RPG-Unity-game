@@ -14,5 +14,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/HouseInteriorScene.unity
     guid: 96ad8d260de8749179c688dc85bda66d
+  - enabled: 1
+    path: Assets/Scenes/HouseGardenScene.unity
+    guid: 7235835ab4434447b974749fc539ac2e
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
