@@ -14,14 +14,21 @@ public class PlayerController : MonoBehaviour
     private const string lastHorizontal = "LastHorizontal";
     private const string lastVertical = "LastVertical";
     private const string walkingState = "Walking";
-
+    private const string attackingState = "Attacking";
+    
+    // Components
     private Animator animator;
     private Rigidbody2D playerRigidbody2D;
 
     /* If the player is created */
     public static bool playerCreated;
-
     public string nextPlaceName;
+
+    /* Attacking variables */
+    private bool attacking = false;
+    public float attackTime;
+    private float attackTimeCounter;
+
     void Start()
     {
         animator = GetComponent<Animator>(); // Get the Animator component
@@ -44,21 +51,38 @@ public class PlayerController : MonoBehaviour
         // space =  velocity * Time.deltaTime 
         walking = false;
 
-        if (Mathf.Abs(Input.GetAxisRaw(horizontalInput)) > 0.5f)
+        /* attacking button and animation */
+        if (Input.GetMouseButtonDown(0))
         {
-            /* Move the player horizontally */
-            playerRigidbody2D.linearVelocity = new UnityEngine.Vector2(Input.GetAxisRaw(horizontalInput) * speed, playerRigidbody2D.linearVelocity.y);
-            walking = true;
-            lastMovement = new UnityEngine.Vector2(Input.GetAxisRaw(horizontalInput), 0);
-        }
-        if (Mathf.Abs(Input.GetAxisRaw(verticalInput)) > 0.5f)
-        {
-            /* Move the player vertically */
-            playerRigidbody2D.linearVelocity = new UnityEngine.Vector2(playerRigidbody2D.linearVelocity.x, Input.GetAxisRaw(verticalInput) * speed);
-            walking = true;
-            lastMovement = new UnityEngine.Vector2(0, Input.GetAxisRaw(verticalInput));
+            attacking = true;
+            attackTimeCounter = attackTime;
+            playerRigidbody2D.linearVelocity = UnityEngine.Vector2.zero; // Stop the player movement
+            animator.SetBool(attackingState, true);
         }
 
+        if (attacking)
+        {
+            attackTimeCounter -= Time.deltaTime;
+            if (attackTimeCounter <= 0)
+            {
+                attacking = false;
+                animator.SetBool(attackingState, false);
+            }
+            return; // Skip the rest of the update while attacking
+        }
+        else
+        {
+            if (Mathf.Abs(Input.GetAxisRaw(horizontalInput)) > 0.5f || Mathf.Abs(Input.GetAxisRaw(verticalInput)) > 0.5f)
+            {
+                walking = true;
+                lastMovement = new UnityEngine.Vector2(
+                    Input.GetAxisRaw(horizontalInput),
+                    Input.GetAxisRaw(verticalInput));
+
+                playerRigidbody2D.linearVelocity = lastMovement.normalized * speed; // Move the player
+            }
+        }
+        
         if (!walking) playerRigidbody2D.linearVelocity = UnityEngine.Vector2.zero;
         // Update the animator parameters based on input
         animator.SetFloat("Horizontal", Input.GetAxisRaw(horizontalInput));
