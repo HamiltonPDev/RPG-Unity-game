@@ -52,7 +52,7 @@ public class PlayerController : MonoBehaviour
         walking = false;
 
         /* attacking button and animation */
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && !attacking) // this prevent multiple attacks at the same time
         {
             attacking = true;
             attackTimeCounter = attackTime;
