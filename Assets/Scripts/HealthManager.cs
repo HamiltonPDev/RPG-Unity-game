@@ -14,6 +14,9 @@ public class HealthManager : MonoBehaviour
     public Color regularColor;
     public float flashDuration;
     public int numberOfFlashes;
+
+    [Header ("Exp when defeated")]
+    public int expWhenDefeated;
     
 
     private Collider2D triggerCollider;
@@ -32,8 +35,22 @@ public class HealthManager : MonoBehaviour
         // Check if the player is dead
         if (currentHealth <= 0)
         {
+            if (gameObject.tag.Equals("Enemy"))
+            {
+                GameObject player = GameObject.Find("player");
+                if (player != null)
+                {
+                    CharacterStats playerStats = player.GetComponent<CharacterStats>();
+                    if (playerStats != null)
+                    {
+                        playerStats.AddExperience(expWhenDefeated);
+                    }
+                }
+            }
+
             gameObject.SetActive(false); // Deactivate the player object
         }
+
     }
 
     /* Methods to calculate health damage */

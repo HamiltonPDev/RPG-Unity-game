@@ -21404,24 +21404,39 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea7b0a84ae76b4c1a9436e012d0afae8, type: 3}
+--- !u!1 &660504498 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2522609223093068175, guid: c0ffbd35211c745a5b8b561407871bc9,
+    type: 3}
+  m_PrefabInstance: {fileID: 2963636283307545809}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &660504505 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2819107133153190315, guid: c0ffbd35211c745a5b8b561407871bc9,
     type: 3}
   m_PrefabInstance: {fileID: 2963636283307545809}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 660504498}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eb678205601274737a8b34fde75435f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!61 &660504509 stripped
-BoxCollider2D:
-  m_CorrespondingSourceObject: {fileID: 7721687593397846778, guid: c0ffbd35211c745a5b8b561407871bc9,
-    type: 3}
-  m_PrefabInstance: {fileID: 2963636283307545809}
+--- !u!114 &660504511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660504498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efd5462bf130a4993ae06368545f5b1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentLevel: 0
+  currentExp: 0
+  expToLevelUp: 000000000a000000140000003200000064000000c8000000f4010000e8030000d007000088130000
 --- !u!1 &699061702
 GameObject:
   m_ObjectHideFlags: 0
@@ -160788,6 +160803,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 4038716503702116280, guid: ea7b0a84ae76b4c1a9436e012d0afae8,
+        type: 3}
+      propertyPath: expWhenDefeated
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4338928808530516443, guid: ea7b0a84ae76b4c1a9436e012d0afae8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -160992,71 +161012,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: player
       objectReference: {fileID: 0}
-    - target: {fileID: 2819107133153190315, guid: c0ffbd35211c745a5b8b561407871bc9,
-        type: 3}
-      propertyPath: flashActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2819107133153190315, guid: c0ffbd35211c745a5b8b561407871bc9,
-        type: 3}
-      propertyPath: flashLength
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2819107133153190315, guid: c0ffbd35211c745a5b8b561407871bc9,
-        type: 3}
-      propertyPath: flashColor.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2819107133153190315, guid: c0ffbd35211c745a5b8b561407871bc9,
-        type: 3}
-      propertyPath: flashColor.b
-      value: 0.2352941
-      objectReference: {fileID: 0}
-    - target: {fileID: 2819107133153190315, guid: c0ffbd35211c745a5b8b561407871bc9,
-        type: 3}
-      propertyPath: flashColor.g
-      value: 0.07843138
-      objectReference: {fileID: 0}
-    - target: {fileID: 2819107133153190315, guid: c0ffbd35211c745a5b8b561407871bc9,
-        type: 3}
-      propertyPath: flashColor.r
-      value: 0.8627452
-      objectReference: {fileID: 0}
-    - target: {fileID: 2819107133153190315, guid: c0ffbd35211c745a5b8b561407871bc9,
-        type: 3}
-      propertyPath: flashDuration
-      value: 0.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 2819107133153190315, guid: c0ffbd35211c745a5b8b561407871bc9,
-        type: 3}
-      propertyPath: regularColor.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2819107133153190315, guid: c0ffbd35211c745a5b8b561407871bc9,
-        type: 3}
-      propertyPath: regularColor.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2819107133153190315, guid: c0ffbd35211c745a5b8b561407871bc9,
-        type: 3}
-      propertyPath: regularColor.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2819107133153190315, guid: c0ffbd35211c745a5b8b561407871bc9,
-        type: 3}
-      propertyPath: regularColor.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2819107133153190315, guid: c0ffbd35211c745a5b8b561407871bc9,
-        type: 3}
-      propertyPath: numberOfFlashes
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2819107133153190315, guid: c0ffbd35211c745a5b8b561407871bc9,
-        type: 3}
-      propertyPath: triggerCollider
-      value: 
-      objectReference: {fileID: 660504509}
     - target: {fileID: 4000202289700208436, guid: c0ffbd35211c745a5b8b561407871bc9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -161110,7 +161065,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2522609223093068175, guid: c0ffbd35211c745a5b8b561407871bc9,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 660504511}
   m_SourcePrefab: {fileID: 100100000, guid: c0ffbd35211c745a5b8b561407871bc9, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

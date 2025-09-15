@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: 7346759167458751007}
   - component: {fileID: 9194257401910288653}
   - component: {fileID: 2819107133153190315}
+  - component: {fileID: 6541688967727040429}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -254,6 +255,22 @@ MonoBehaviour:
   regularColor: {r: 1, g: 1, b: 1, a: 1}
   flashDuration: 0.07
   numberOfFlashes: 4
+  expWhenDefeated: 0
+--- !u!114 &6541688967727040429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2522609223093068175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efd5462bf130a4993ae06368545f5b1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentLevel: 0
+  currentExp: 0
+  expToLevelUp: 000000000a000000140000003200000064000000c8000000f4010000e8030000d007000088130000
 --- !u!1 &5129822460070063728
 GameObject:
   m_ObjectHideFlags: 0
