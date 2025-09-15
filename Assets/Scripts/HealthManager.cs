@@ -5,9 +5,9 @@ using UnityEngine;
 public class HealthManager : MonoBehaviour
 {
     [SerializeField]
-    private int maxHealth;
+    public int maxHealth;
     [SerializeField]
-    private int currentHealth;
+    public int currentHealth;
 
     void Start()
     {

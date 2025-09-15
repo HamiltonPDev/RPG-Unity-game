@@ -1,16 +1,30 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using System.Text;
 
 public class UIManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    // References to UI elements
+    public Slider PlayerHealthBar;
+    public Text PlayerHealthText;
 
-    // Update is called once per frame
+    // Reference to the player's HealthManager script
+    public HealthManager playerHealthManager;
+
     void Update()
     {
-        
+        int maxHealth = playerHealthManager.maxHealth;
+        int currentHealth = playerHealthManager.currentHealth;
+
+        // If we level up and max health changes, update the health bar's max value
+
+        // Update the health bar's value and text every frame
+        PlayerHealthBar.maxValue = maxHealth;
+        PlayerHealthBar.value = currentHealth;
+
+        /* Update the health text */
+        PlayerHealthText.text = string.Format("{0} / {1}", currentHealth, maxHealth);
     }
 }
