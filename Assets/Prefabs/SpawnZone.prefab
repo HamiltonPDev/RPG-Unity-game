@@ -44,3 +44,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcc86a7e20f9e45a798f2d66e6d46f32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  facingDirection: {x: 0, y: 0}
+  placeName: HamiltonHouseFront

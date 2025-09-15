@@ -91,3 +91,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69287ca323017435780a0a6d503aa9e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  newPlaceName: HouseInteriorScene
+  goToPlaceName: HamiltonHouse

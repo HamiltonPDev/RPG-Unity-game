@@ -421,10 +421,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c22dc19e6c1d46f29f5cba020c50b4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
+  damage: 6
   hurtAnimation: {fileID: 5952191541334222432, guid: 31b3f8e34c8b94bd4933d7f058870f3b,
     type: 3}
   hitPoint: {fileID: 374986127687478007}
+  damageNumber: {fileID: 2633418872060456284, guid: 443bce7df21314638973a72f02209fe1,
+    type: 3}
 --- !u!1 &6020788368620251236
 GameObject:
   m_ObjectHideFlags: 0
