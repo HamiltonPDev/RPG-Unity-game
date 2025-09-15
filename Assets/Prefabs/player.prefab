@@ -250,6 +250,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 200
   currentHealth: 0
+  flashColor: {r: 0.8627452, g: 0.07843138, b: 0.2352941, a: 1}
+  regularColor: {r: 1, g: 1, b: 1, a: 1}
+  flashDuration: 0.07
+  numberOfFlashes: 4
 --- !u!1 &5129822460070063728
 GameObject:
   m_ObjectHideFlags: 0
