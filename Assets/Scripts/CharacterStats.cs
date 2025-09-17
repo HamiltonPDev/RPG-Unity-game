@@ -7,13 +7,23 @@ public class CharacterStats : MonoBehaviour
     [Header ("Character Stats")]
     public int currentLevel;
     public int currentExp;
-    public int[] expToLevelUp;
+    public int[] expToLevelUp, hpLevels, strengthLevels, defenseLevels;
+
+    private HealthManager healthManager;
+
+    void Start()
+    {
+        healthManager = GetComponent<HealthManager>();
+    }
 
     void Update()
     {
         if(currentLevel >= expToLevelUp.Length) return;
 
-        if(currentExp >= expToLevelUp[currentLevel]) currentLevel++;
+        if(currentExp >= expToLevelUp[currentLevel]) {
+            currentLevel++;
+            healthManager.UpdateMaxHealth(hpLevels[currentLevel]);
+        }
     }
     public void AddExperience(int exp)
     {

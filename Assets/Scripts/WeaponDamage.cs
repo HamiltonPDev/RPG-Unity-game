@@ -11,10 +11,21 @@ public class WeaponDamage : MonoBehaviour
     public GameObject damageNumber;
     private GameObject currentEnemy; // track current enemy
 
+    private CharacterStats playerStats;
+
+    void Start()
+    {
+        playerStats = GetComponentInParent<CharacterStats>();
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag.Equals("Enemy"))
         {
+            int totalDamage = damage; 
+            if(playerStats != null) {
+                totalDamage += playerStats.strengthLevels[playerStats.currentLevel];
+            }
             // Reset damege if attacking a different enemy
             if (currentEnemy != collision.gameObject)
             {
@@ -22,7 +33,7 @@ public class WeaponDamage : MonoBehaviour
                 currentEnemy = collision.gameObject;
             }
             // this line applies damage to the enemy
-            collision.gameObject.GetComponent<HealthManager>().DamageCharacter(damage);
+            collision.gameObject.GetComponent<HealthManager>().DamageCharacter(totalDamage);
 
             // this line creates a visual effect at the hit location
             Instantiate(hurtAnimation, hitPoint.transform.position, hitPoint.transform.rotation);
@@ -32,8 +43,8 @@ public class WeaponDamage : MonoBehaviour
                 damageNumber, hitPoint.transform.position,
                 Quaternion.Euler(Vector3.zero) // no rotation
             );
-            // set the damage amount on the damage numberdama
-            clone.GetComponent<DamageNumber>().damagePoints = damage;
+            // set the damage amount on the damage number
+            clone.GetComponent<DamageNumber>().damagePoints = totalDamage;
         }
     }
 }
