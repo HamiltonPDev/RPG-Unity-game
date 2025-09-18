@@ -445,7 +445,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c22dc19e6c1d46f29f5cba020c50b4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 6
+  damage: 5
+  totalPlayerDamage: 0
   hurtAnimation: {fileID: 5952191541334222432, guid: 31b3f8e34c8b94bd4933d7f058870f3b,
     type: 3}
   hitPoint: {fileID: 374986127687478007}

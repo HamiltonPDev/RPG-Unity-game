@@ -12,11 +12,19 @@ public class UIManager : MonoBehaviour
     public Text PlayerHealthText;
     public HealthManager playerHealthManager;
 
-    // Reference to the player's HealthManager script
     [Header("Player Stats")]
     public Text PlayerLevelText;    
     public Text PlayerCurrentExpText;
     public CharacterStats playerStats;
+
+    [Header ("Strength")]
+    public Text PlayerStrengthText;
+    private WeaponDamage playerWeaponDamage;
+
+    void Start()
+    {
+        playerWeaponDamage = FindFirstObjectByType<WeaponDamage>();
+    }
 
     void Update()
     {
@@ -28,6 +36,10 @@ public class UIManager : MonoBehaviour
         int currentLevel = playerStats.currentLevel;
         int currentExp = playerStats.currentExp;
 
+        /* Update Strength stats*/
+        int Strength = playerWeaponDamage.totalPlayerDamage;
+
+
         // Update the health bar's value and text every frame
         PlayerHealthBar.maxValue = maxHealth;
         PlayerHealthBar.value = currentHealth;
@@ -38,5 +50,8 @@ public class UIManager : MonoBehaviour
         /* Update the player stats text */
         PlayerLevelText.text = "Level: " + currentLevel.ToString();
         PlayerCurrentExpText.text = "XP: " + currentExp.ToString();
+
+        /* Update Strength in the UI*/
+        PlayerStrengthText.text = "Strength: " + Strength.ToString();
     }
 }

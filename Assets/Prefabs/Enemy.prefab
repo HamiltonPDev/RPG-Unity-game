@@ -221,7 +221,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb678205601274737a8b34fde75435f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 20
+  maxHealth: 30
   currentHealth: 0
   flashColor: {r: 0, g: 0, b: 0, a: 0}
   regularColor: {r: 0, g: 0, b: 0, a: 0}

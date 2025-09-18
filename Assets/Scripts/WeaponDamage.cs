@@ -6,6 +6,7 @@ public class WeaponDamage : MonoBehaviour
 {
     /* Damage amount */
     public int damage;
+    public int totalPlayerDamage;
     public GameObject hurtAnimation;
     public GameObject hitPoint;
     public GameObject damageNumber;
@@ -22,14 +23,14 @@ public class WeaponDamage : MonoBehaviour
     {
         if (collision.gameObject.tag.Equals("Enemy"))
         {
-            int totalDamage = damage; 
-            if(playerStats != null) {
+            int totalDamage = damage;
+            if (playerStats != null)
+            {
                 totalDamage += playerStats.strengthLevels[playerStats.currentLevel];
             }
             // Reset damege if attacking a different enemy
             if (currentEnemy != collision.gameObject)
             {
-                DamageNumber.ResetDamage();
                 currentEnemy = collision.gameObject;
             }
             // this line applies damage to the enemy
@@ -45,6 +46,7 @@ public class WeaponDamage : MonoBehaviour
             );
             // set the damage amount on the damage number
             clone.GetComponent<DamageNumber>().damagePoints = totalDamage;
+            totalPlayerDamage = totalDamage; // update total player damage to include strength
         }
     }
 }
