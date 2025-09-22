@@ -16,6 +16,7 @@ public class EnemyStats : MonoBehaviour
     private HealthManager healthManager;
 
     [Header("Scaling Enemy Per Level")]
+    public CharacterStats playerStats;
     public int healthPerLevel;
     public int damagePerLevel;
     public int defencePerLevel;
@@ -29,7 +30,15 @@ public class EnemyStats : MonoBehaviour
     void Update()
     {
         // Update enemy stats based on level
-        int currentLevel = baseLevel; // This could be set dynamically based on game logic
-        int currentHealth = baseHealth + (healthPerLevel * (currentLevel - 1));
+        if (playerStats != null)
+        {   
+            int currentLevel = playerStats.currentLevel;
+            healthManager.UpdateMaxHealth(baseHealth + (healthPerLevel * (currentLevel - 1)));
+            // You can similarly update damage, defense, and exp reward if needed
+        }
+        else
+        {
+            Debug.LogWarning("CharacterStats component not found on " + gameObject.name);
+        }
     }
 }

@@ -246,7 +246,7 @@ MonoBehaviour:
   baseDamage: 0
   baseDefense: 0
   baseExpReward: 0
-  healthPerLevel: 0
-  damagePerLevel: 0
-  defencePerLevel: 0
-  expRewardPerLevel: 0
+  healthPerLevel: 10
+  damagePerLevel: 2
+  defencePerLevel: 1
+  expRewardPerLevel: 5
