@@ -222,7 +222,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb678205601274737a8b34fde75435f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 30
+  maxHealth: 60
   currentHealth: 0
   flashColor: {r: 0, g: 0, b: 0, a: 0}
   regularColor: {r: 0, g: 0, b: 0, a: 0}
@@ -241,12 +241,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 313ec345cb9d94ff59e78f7f4923615c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseHealth: 2
-  baseDamage: 2
-  baseExpReward: 10
-  healthPerLevel: 8
+  healthPerLevel: 2
   damagePerLevel: 2
-  expRewardPerLevel: 10
   finalHealth: 0
   finalDamage: 0
-  finalExpReward: 0

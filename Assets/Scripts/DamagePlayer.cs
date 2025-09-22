@@ -24,4 +24,9 @@ public class DamagePlayer : MonoBehaviour
             clone.GetComponent<DamageNumber>().damagePoints = damage;
         }
     }
+
+    public void UpdateDamage(int newDamage)
+    {
+        damage = newDamage;
+    }
 }

@@ -67,13 +67,6 @@ public class HealthManager : MonoBehaviour
         currentHealth = maxHealth; // Reset current health to new max health
     }
 
-    // /* Method to update Enemy max health */
-    // public void UpdateEnemyMaxHealth(int newMaxHealth)
-    // {
-    //     maxHealth = newMaxHealth;
-    //     currentHealth = maxHealth; // Reset current health to new max health
-    // }
-
     /* Coroutine to handle flashing effect */
     private IEnumerator FlashCo()
     {

@@ -14,10 +14,15 @@ public class EnemyStats : MonoBehaviour
     public int finalDamage;
 
     private HealthManager healthManager;
+    private int lastPlayerLevel = -1;
 
     void Start()
     {
-        healthManager = GetComponent<HealthManager>();
+        healthManager = GetComponent<HealthManager>();  
+    }
+
+    void Update()
+    {
 
         // Find the player and calculate stats based on player's level
         GameObject player = GameObject.FindGameObjectWithTag("Player");
@@ -27,7 +32,11 @@ public class EnemyStats : MonoBehaviour
             CharacterStats playerStats = player.GetComponent<CharacterStats>();
             if (playerStats != null)
             {
-                ScaleWithPlayerLevel(playerStats.currentLevel);
+                if (playerStats.currentLevel != lastPlayerLevel)
+                {
+                    ScaleWithPlayerLevel(playerStats.currentLevel);
+                    lastPlayerLevel = playerStats.currentLevel; // Update last known player level
+                }
             }
         }
     }
@@ -36,11 +45,16 @@ public class EnemyStats : MonoBehaviour
     {
         if (healthManager != null)
         {
-            // Scaling existing maxHealth from HealthManager
-            int scaledHealth = healthManager.maxHealth + (healthPerLevel * playerLevel);
-            healthManager.UpdateMaxHealth(scaledHealth);
-            finalHealth = healthManager.maxHealth; // Update finalHealth to reflect the new max health
+            // Calculate what the base health was before scaling
+            int baseHealth = healthManager.maxHealth;
+
+            finalHealth = baseHealth + (healthPerLevel * (playerLevel - 1));
+            Debug.Log("Scaling Enemy Health: " + finalHealth);
             finalDamage = damagePerLevel * playerLevel;
+            Debug.Log("Scaling Enemy Damage: " + finalDamage);
+
+            // Update the HealthManager's max health if it has changed
+            healthManager.UpdateMaxHealth(finalHealth);
         }
     }
 }
