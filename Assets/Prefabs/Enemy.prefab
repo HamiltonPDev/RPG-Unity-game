@@ -246,7 +246,8 @@ MonoBehaviour:
   baseDamage: 0
   baseDefense: 0
   baseExpReward: 0
-  healthPerLevel: 10
+  playerStats: {fileID: 0}
+  healthPerLevel: 8
   damagePerLevel: 2
   defencePerLevel: 1
   expRewardPerLevel: 5
