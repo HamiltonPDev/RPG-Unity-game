@@ -241,13 +241,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 313ec345cb9d94ff59e78f7f4923615c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseLevel: 0
-  baseHealth: 0
-  baseDamage: 0
-  baseDefense: 0
-  baseExpReward: 0
-  playerStats: {fileID: 0}
+  baseHealth: 2
+  baseDamage: 2
+  baseExpReward: 10
   healthPerLevel: 8
   damagePerLevel: 2
-  defencePerLevel: 1
-  expRewardPerLevel: 5
+  expRewardPerLevel: 10
+  finalHealth: 0
+  finalDamage: 0
+  finalExpReward: 0
