@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 1014090027588807991}
   - component: {fileID: 3124878004831135777}
   - component: {fileID: 4038716503702116280}
+  - component: {fileID: 8024072185034122238}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -228,3 +229,24 @@ MonoBehaviour:
   flashDuration: 0
   numberOfFlashes: 0
   expWhenDefeated: 10
+--- !u!114 &8024072185034122238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 408298985329036158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 313ec345cb9d94ff59e78f7f4923615c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseLevel: 0
+  baseHealth: 0
+  baseDamage: 0
+  baseDefense: 0
+  baseExpReward: 0
+  healthPerLevel: 0
+  damagePerLevel: 0
+  defencePerLevel: 0
+  expRewardPerLevel: 0

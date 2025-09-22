@@ -32,9 +32,10 @@ public class HealthManager : MonoBehaviour
 
     void Update()
     {
-        // Check if the player is dead
+        // Check if health dropped to zero or below and deactivate the player object
         if (currentHealth <= 0)
         {
+            /* If the object is an enemy, give experience to the player */
             if (gameObject.tag.Equals("Enemy"))
             {
                 GameObject player = GameObject.Find("player");
@@ -59,13 +60,14 @@ public class HealthManager : MonoBehaviour
         StartCoroutine(FlashCo());
         currentHealth -= damage;
     }
-
+    /* Method to update max health */
     public void UpdateMaxHealth(int newMaxHealth)
     {
         maxHealth = newMaxHealth;
         currentHealth = maxHealth; // Reset current health to new max health
     }
 
+    /* Coroutine to handle flashing effect */
     private IEnumerator FlashCo()
     {
         int temp = 0;
