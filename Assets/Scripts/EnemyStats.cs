@@ -15,10 +15,12 @@ public class EnemyStats : MonoBehaviour
 
     private HealthManager healthManager;
     private int lastPlayerLevel = -1;
+    private int originalBaseHealth;
 
     void Start()
     {
-        healthManager = GetComponent<HealthManager>();  
+        healthManager = GetComponent<HealthManager>();
+        originalBaseHealth = healthManager.maxHealth;
     }
 
     void Update()
@@ -48,7 +50,7 @@ public class EnemyStats : MonoBehaviour
             // Calculate what the base health was before scaling
             int baseHealth = healthManager.maxHealth;
 
-            finalHealth = baseHealth + (healthPerLevel * (playerLevel - 1));
+            finalHealth = originalBaseHealth + (healthPerLevel * (playerLevel - 1));
             Debug.Log("Scaling Enemy Health: " + finalHealth);
             finalDamage = damagePerLevel * playerLevel;
             Debug.Log("Scaling Enemy Damage: " + finalDamage);
