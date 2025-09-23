@@ -241,7 +241,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 313ec345cb9d94ff59e78f7f4923615c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthPerLevel: 2
+  healthPerLevel: 15
   damagePerLevel: 2
   finalHealth: 0
   finalDamage: 0

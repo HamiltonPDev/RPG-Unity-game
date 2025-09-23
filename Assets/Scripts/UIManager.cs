@@ -21,9 +21,15 @@ public class UIManager : MonoBehaviour
     public Text PlayerStrengthText;
     private WeaponDamage playerWeaponDamage;
 
+    [Header ("Enemies Stats")]
+    public Text EnemyDamageText;
+    public Text EnemyHealthText;
+    private EnemyStats enemyStats;
+
     void Start()
     {
         playerWeaponDamage = FindFirstObjectByType<WeaponDamage>();
+        enemyStats = FindFirstObjectByType<EnemyStats>();
     }
 
     void Update()
@@ -39,6 +45,10 @@ public class UIManager : MonoBehaviour
         /* Update Strength stats*/
         int Strength = playerWeaponDamage.totalPlayerDamage;
 
+        /* Update Enemy stats */
+        int enemyHealth = enemyStats.finalHealth;
+        int enemyDamage = enemyStats.finalDamage;
+
 
         // Update the health bar's value and text every frame
         PlayerHealthBar.maxValue = maxHealth;
@@ -48,10 +58,14 @@ public class UIManager : MonoBehaviour
         PlayerHealthText.text = string.Format("{0} / {1}", currentHealth, maxHealth);
 
         /* Update the player stats text */
-        PlayerLevelText.text = "Level: " + currentLevel.ToString();
-        PlayerCurrentExpText.text = "XP: " + currentExp.ToString();
+        PlayerLevelText.text = $"Level: {currentLevel}";
+        PlayerCurrentExpText.text = $"XP: {currentExp}";
 
         /* Update Strength in the UI*/
-        PlayerStrengthText.text = "Strength: " + Strength.ToString();
+        PlayerStrengthText.text = $"Strength: {Strength}";
+
+        /* Update Enemy stats */
+        EnemyDamageText.text = $"Damage: {enemyDamage}";
+        EnemyHealthText.text = $"HP: {enemyHealth}";
     }
 }
