@@ -20,8 +20,11 @@ public class UIManager : MonoBehaviour
     [Header ("Strength")]
     public Text PlayerStrengthText;
     private WeaponDamage playerWeaponDamage;
+    
+    [Header ("Player Defense")]
+    public Text PlayerDefenseText;
 
-    [Header ("Enemies Stats")]
+    [Header("Enemies Stats")]
     public Text EnemyDamageText;
     public Text EnemyHealthText;
     private EnemyStats enemyStats;
@@ -43,7 +46,10 @@ public class UIManager : MonoBehaviour
         int currentExp = playerStats.currentExp;
 
         /* Update Strength stats*/
-        int Strength = playerWeaponDamage.totalPlayerDamage;
+        int strength = playerWeaponDamage.totalPlayerDamage;
+
+        /* Update Defense stats */
+        int defense = playerStats.defenseLevels[playerStats.currentLevel];
 
         /* Update Enemy stats */
         int enemyHealth = enemyStats.finalHealth;
@@ -62,7 +68,10 @@ public class UIManager : MonoBehaviour
         PlayerCurrentExpText.text = $"XP: {currentExp}";
 
         /* Update Strength in the UI*/
-        PlayerStrengthText.text = $": {Strength}";
+        PlayerStrengthText.text = $": {strength}";
+
+        /* Update Defense in the UI*/
+        PlayerDefenseText.text = $": {defense}";
 
         /* Update Enemy stats */
         EnemyDamageText.text = $"Enemy D: {enemyDamage}";
