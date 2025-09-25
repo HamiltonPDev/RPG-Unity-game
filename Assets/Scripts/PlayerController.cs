@@ -55,9 +55,9 @@ public class PlayerController : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && !attacking) // this prevent multiple attacks at the same time
         {
             attacking = true;
-            attackTimeCounter = attackTime;
+            attackTimeCounter = attackTime; 
             playerRigidbody2D.linearVelocity = UnityEngine.Vector2.zero; // Stop the player movement
-            animator.SetBool(attackingState, true);
+            animator.SetBool(attackingState, true); 
         }
 
         if (attacking)
