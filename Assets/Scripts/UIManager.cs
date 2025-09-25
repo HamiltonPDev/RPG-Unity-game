@@ -62,10 +62,10 @@ public class UIManager : MonoBehaviour
         PlayerCurrentExpText.text = $"XP: {currentExp}";
 
         /* Update Strength in the UI*/
-        PlayerStrengthText.text = $"Strength: {Strength}";
+        PlayerStrengthText.text = $": {Strength}";
 
         /* Update Enemy stats */
-        EnemyDamageText.text = $"Damage: {enemyDamage}";
-        EnemyHealthText.text = $"HP: {enemyHealth}";
+        EnemyDamageText.text = $"Enemy D: {enemyDamage}";
+        EnemyHealthText.text = $"Enemy HP: {enemyHealth}";
     }
 }
