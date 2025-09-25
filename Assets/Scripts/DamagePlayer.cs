@@ -25,6 +25,7 @@ public class DamagePlayer : MonoBehaviour
         }
     }
 
+    /* Method to update damage dynamically */
     public void UpdateDamage(int newDamage)
     {
         damage = newDamage;
