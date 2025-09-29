@@ -37,7 +37,7 @@ studenten tussen 15-18 jaar.
 ## Opdracht B: Voorbereiding en Game Design
 
 -   📃 [Game Design Document (GDD)](Docs/Opdracht-b/Project%20Design%20Document.pdf) - Goedgekeurd door mr. Jacobs
--   📃 [Ontwikkelomgeving](Docs/Opdracht-b/) - Specificaties hardware en software
+-   📃 [Ontwikkelomgeving](Docs/Opdracht-b/Ontwikkelomgeving.pdf) - Specificaties hardware en software
 
 ## Opdracht C: Realiseren en Testen
 
