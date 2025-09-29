@@ -30,9 +30,9 @@ studenten tussen 15-18 jaar.
 
 ## Opdracht A: Documentatie van het Proces
 
-📃 [Logboek](Docs/Opdracht-a/) - Dagelijks werkproces
-🔗 Git Repository: [Commits](https://github.com/HamiltonPDev/RPG-Unity-game/commits/main/)
-💻 Code Commentaar - Te vinden in alle scripts in `Assets/Scripts`
+📃 [Logboek](Docs/Opdracht-a/) - Dagelijks werkproces.
+🔗 Git Repository: [Commits](https://github.com/HamiltonPDev/RPG-Unity-game/commits/main/).
+💻 Code Commentaar - Te vinden in alle scripts in `Assets/Scripts`.
 
 ## Opdracht B: Voorbereiding en Game Design
 
