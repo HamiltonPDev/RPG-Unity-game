@@ -1,13 +1,35 @@
-# RPG Unity Game - K0788 Examen Project
+# RPG Unity Game - K0788 Examen
 
-## Project Overzicht
-
-Een 2D RPG game ontwikkeld in Unity voor het K0788 examen "Basis Programmeren van Games".
+**Basis Programmeren van Games**
 
 **Student:** Hamilton Posada
-**Examen:** K0788 - Basis Programmeren van Games
-**Periode:** 2 weken development cycle
-**Game Engine:** Unity 2D
+**Opleding:** Bit Academy - Game Development
+**Examen Datum:** Oktober 2025
+**Examen code:** K0788
+
+## Over dit Project
+
+Dit project is gemaakt als onderdeel van het K0788 examen voor de cursus Basis Programmeren van Games. Het is een eenvoudige 2D RPG game ontwikkeld in Unity, waarin de speler een karakter bestuurt dat vijanden kan bevechten en door verschillende gebieden kan navigeren.
+De game is ontwikkeld voor **Best Education B.V.** om hun imago te verjongen en aantrekkelijk te maken voor
+studenten tussen 15-18 jaar.
+
+## Repository Structuur
+
+```
+|-- Assets/   # Unity game assets(Scripts, Sprites, Scenes, Prefabs, UI)
+├── Docs/    # Alle examendocumentatie
+| |-- Opdracht-a/ # Documentatie van het proces
+| |-- Opdracht-b/ # Voorbereiding en planning
+| |-- Opdracht-c/ # Realiseren en testen van de game
+| |-- Opdracht-d/ # Presentatie en overdracht
+└── README/  # Dit bestand
+```
+
+## Examendocumentatie
+
+## Opdracht A: Documentatie van het Proces
+
+📃 [Logboek](Docs/Opdracht-a/) - Dagelijks werkproces
 
 ## Game Features
 
@@ -73,17 +95,6 @@ Een 2D RPG game ontwikkeld in Unity voor het K0788 examen "Basis Programmeren va
 
 -   Performance optimalisatie voor mobile deployment
 -   Advanced AI behaviors
-
-## Projectstructuur
-
-```
-Assets/
-├── Scripts/           # Alle C# scripts
-├── Sprites/          # 2D graphics en textures
-├── Scenes/           # Unity scenes
-├── Prefabs/          # Reusable game objects
-└── UI/               # User interface assets
-```
 
 ## Contact & Documentatie
 
