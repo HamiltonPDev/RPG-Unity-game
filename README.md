@@ -30,24 +30,24 @@ studenten tussen 15-18 jaar.
 
 ## Opdracht A: Documentatie van het Proces
 
-📃 [Logboek](Docs/Opdracht-a/) - Dagelijks werkproces.
-🔗 Git Repository: [Commits](https://github.com/HamiltonPDev/RPG-Unity-game/commits/main/).
-💻 Code Commentaar - Te vinden in alle scripts in `Assets/Scripts`.
+-   📃 [Logboek](Docs/Opdracht-a/) - Dagelijks werkproces.
+-   🔗 Git Repository: [Commits](https://github.com/HamiltonPDev/RPG-Unity-game/commits/main/).
+-   💻 Code Commentaar - Te vinden in alle scripts in `Assets/Scripts`.
 
 ## Opdracht B: Voorbereiding en Game Design
 
-📃 [Game Design Document (GDD)](Docs/Opdracht-b/Project%20Design%20Document.pdf) - Goedgekeurd door mr. Jacobs
-📃 [Ontwikkelomgeving](Docs/Opdracht-b/) - Specificaties hardware en software
+-   📃 [Game Design Document (GDD)](Docs/Opdracht-b/Project%20Design%20Document.pdf) - Goedgekeurd door mr. Jacobs
+-   📃 [Ontwikkelomgeving](Docs/Opdracht-b/) - Specificaties hardware en software
 
 ## Opdracht C: Realiseren en Testen
 
-🎮 [Speelbare Game](Builds/) - Werkende build
-📃 [Testverlagen](Docs/Opdracht-c/) - Gebruikerstests met feedback en aanpassingen
+-   🎮 [Speelbare Game](Builds/) - Werkende build.
+-   📃 [Testverlagen](Docs/Opdracht-c/) - Gebruikerstests met feedback en aanpassingen.
 
 ## Opdracht D: Presentatie en Overdracht
 
-📃 [Overdrachtsdocument](Docs/Opdracht-d/) - Handleiding voor developer
-📊 [Presentatie](Docs/Opdracht-d/) - Eindpresentatie van het project
+-   📃 [Overdrachtsdocument](Docs/Opdracht-d/) - Handleiding voor developer
+-   📊 [Presentatie](Docs/Opdracht-d/) - Eindpresentatie van het project
 
 ## Technische Specificaties
 
