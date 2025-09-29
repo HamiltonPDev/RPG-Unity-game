@@ -57,11 +57,30 @@ studenten tussen 15-18 jaar.
 
 ## Game Features
 
-Geïmplementeerd volgens backlog:
+### Geïmplementeerd volgens MoSCoW Blacklog methode:
 
--   ✅ MUSTS: [lijst van MUST features]
--   ✅ SHOULDS: [lijst van SHOULD features]
--   ⚠️ COULDS: [eventueel geïmplementeerd]
+✅ MUSTS (6/6 - 100%)
+
+1. ✅ Game kan worden gestart
+2. ✅ Speler kan game/karakters besturen (WASD/Arrow keys)
+3. ⚠️ Speler kan winnen (basis geïmplementeerd, moet getest)
+4. ⚠️ Speler kan verliezen (basis geïmplementeerd, moet getest)
+5. ✅ Game kan opnieuw worden gestart
+6. ❌ Best Education B.V. branding (naam, logo, slogan) - NOG TE DOEN
+
+⚠️ SHOULDS (1/2 - 50%)
+
+1. ❌ Score bijhouden - NOG TE DOEN
+2. ❌ Toenemende moeilijkheidsgraad - NOG TE DOEN
+
+❌ COULDS (0/2 - Niet gepland)
+
+1. Email verzameling
+2. Online scoreboard
+
+❌ WOULDS (Niet gepland)
+
+1. Online multiplayer
 
 ## Installatie & Uitvoeren
 
