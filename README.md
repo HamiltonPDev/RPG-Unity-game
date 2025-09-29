@@ -63,6 +63,7 @@ Een 2D RPG game ontwikkeld in Unity voor het K0788 examen "Basis Programmeren va
 **Aanbevolen verbeteringen:**
 
 -   Uitbreiding van combat system met meer wapens
+-   AI is nog niet volledig geïmplementeerd
 -   Inventory management systeem
 -   Quest systeem voor verhaal progressie
 -   Audio implementatie (SFX en background music)
