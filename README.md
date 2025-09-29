@@ -70,7 +70,7 @@ studenten tussen 15-18 jaar.
 
 ⚠️ SHOULDS (1/2 - 50%)
 
-1. ❌ Score bijhouden - NOG TE DOEN
+1. ✅ Score bijhouden - NOG TE DOEN
 2. ❌ Toenemende moeilijkheidsgraad - NOG TE DOEN
 
 ❌ COULDS (0/2 - Niet gepland)
@@ -81,6 +81,18 @@ studenten tussen 15-18 jaar.
 ❌ WOULDS (Niet gepland)
 
 1. Online multiplayer
+
+### Technische Features
+
+-   Real-time combat met damage calculations
+-   Intelligent enemy AI met patrol patterns
+-   Smooth player movement en controls
+-   Dynamic spawn system voor enemies
+-   Scene management en transitions
+-   Health en score tracking
+-   Health management voor player en enemies
+-   UI elementen voor health bar en score display
+-   UI system voor stats display
 
 ## Installatie & Uitvoeren
 
