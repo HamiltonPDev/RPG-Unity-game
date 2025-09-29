@@ -22,6 +22,7 @@ studenten tussen 15-18 jaar.
 | |-- Opdracht-b/ # Voorbereiding en planning
 | |-- Opdracht-c/ # Realiseren en testen van de game
 | |-- Opdracht-d/ # Presentatie en overdracht
+|-- Builds/  # Gebouwde versies van de game
 └── README/  # Dit bestand
 ```
 
@@ -30,72 +31,43 @@ studenten tussen 15-18 jaar.
 ## Opdracht A: Documentatie van het Proces
 
 📃 [Logboek](Docs/Opdracht-a/) - Dagelijks werkproces
+🔗 Git Repository: [Commits](https://github.com/HamiltonPDev/RPG-Unity-game/commits/main/)
+💻 Code Commentaar - Te vinden in alle scripts in `Assets/Scripts`
+
+## Opdracht B: Voorbereiding en Game Design
+
+📃 [Game Design Document (GDD)](Docs/Opdracht-b/Project%20Design%20Document.pdf) - Goedgekeurd door mr. Jacobs
+📃 [Ontwikkelomgeving](Docs/Opdracht-b/) - Specificaties hardware en software
+
+## Opdracht C: Realiseren en Testen
+
+🎮 [Speelbare Game](Builds/) - Werkende build
+📃 [Testverlagen](Docs/Opdracht-c/) - Gebruikerstests met feedback en aanpassingen
+
+## Opdracht D: Presentatie en Overdracht
+
+📃 [Overdrachtsdocument](Docs/Opdracht-d/) - Handleiding voor developer
+📊 [Presentatie](Docs/Opdracht-d/) - Eindpresentatie van het project
+
+## Technische Specificaties
+
+-   **Unity Versie:** 6000.1.10f1
+<!-- - **Platform:** [Windows/Mac/WebGL] -->
+-   **Programmeertaal:** C#
 
 ## Game Features
 
--   **Player Movement:** WASD/Arrow key control met smooth beweging
--   **Combat System:** Real-time gevechten met damage calculations
--   **Enemy AI:** Intelligente vijanden met patrol en chase behavior
--   **Health Management:** Player en enemy health systems
--   **UI Management:** Stats display (strength, defense, health)
--   **Scene Transitions:** Seamless overgangen tussen game areas
--   **Spawn System:** Dynamic enemy spawning in designated zones
+Geïmplementeerd volgens backlog:
 
-### Ontwikkelomgeving
+-   ✅ MUSTS: [lijst van MUST features]
+-   ✅ SHOULDS: [lijst van SHOULD features]
+-   ⚠️ COULDS: [eventueel geïmplementeerd]
 
--   **Game Engine:** Unity 2020.3 LTS
--   **Scripting Language:** C#
--   **IDE:** Visual Studio Code / Visual Studio
--   **Version Control:** Git + GitHub
+## Installatie & Uitvoeren
 
-### Core Scripts
+1. Clone deze repository
+2. Open project in Unity 6000.1.10f1
+3. Open scene: `Assets/Scenes/MainScene.unity`
+4. Druk op Play
 
--   `PlayerController.cs` - Player movement en input handling
--   `DamagePlayer.cs` - Damage calculation en combat mechanics
--   `EnemyAI.cs` - Enemy behavior en pathfinding
--   `CharacterStats.cs` - Player statistics management
--   `HealthManager.cs` - Health system voor player en enemies
--   `UIManager.cs` - User interface updates
--   `SpawnZone.cs` - Enemy spawning mechaniek
--   `GoToNewPlace.cs` - Scene transition handling
--   `CameraFollow.cs` - Camera movement en follow logic
--   `DontDestroyOnLoad.cs` - Persistent objects tussen scenes
-
-### Vereisten
-
--   Unity Hub
--   Unity Editor versie 2020.3 LTS
--   Visual Studio Code of Visual Studio
--   Git
-
-## Game Controls
-
--   **WASD / Arrow Keys:** Player movement
--   **ClickDown:** Attack action
-
-## Code Kwaliteit
-
--   Alle scripts bevatten uitgebreide commentaren voor duidelijkheid
--   Consistent gebruik van naming conventions
--   Modulaire code structuur voor onderhoudbaarheid
--   Error handling waar nodig
-
-## Toekomstige Ontwikkelingen
-
-**Aanbevolen verbeteringen:**
-
--   Uitbreiding van combat system met meer wapens
--   AI is nog niet volledig geïmplementeerd
--   Inventory management systeem
--   Quest systeem voor verhaal progressie
--   Audio implementatie (SFX en background music)
--   Save/Load functionaliteit
-
-**Technische verbeteringen:**
-
--   Performance optimalisatie voor mobile deployment
--   Advanced AI behaviors
-
-## Contact & Documentatie
-
--   **Developer:** Hamilton Posada
+Of download de [gebouwde versie](builds/).
