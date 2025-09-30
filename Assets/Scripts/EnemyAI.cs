@@ -54,6 +54,21 @@ public class EnemyAI : MonoBehaviour
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
 
         // State machine logic
+        switch (currentState)
+        {
+            case EnemyState.Patrol:
+                HandlePatrolState(distanceToPlayer);
+                break;
+            case EnemyState.Chase:
+                HandleChaseState(distanceToPlayer);
+                break;
+            case EnemyState.Attack:
+                HandleAttackState(distanceToPlayer);
+                break;
+            case EnemyState.Idle:
+                HandleIdleState(distanceToPlayer);
+                break;
+        }
     }
 
     /* Handle patrol behavior - move between patrol points */
@@ -116,7 +131,6 @@ public class EnemyAI : MonoBehaviour
         waitTimer += Time.deltaTime;
         if (waitTimer >= waitTime)
         {
-
             // Move to next patrol point
             currentPatrolIndex = (currentPatrolIndex + 1) % patrolPoints.Length;
             waitTimer = 0f;
