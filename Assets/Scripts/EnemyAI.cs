@@ -167,4 +167,39 @@ public class EnemyAI : MonoBehaviour
 
         patrolPoints = new Transform[] { point1.transform, point2.transform };
     }
+
+    /*
+        This is an extra,
+        Debug visualization in Scene view
+    */
+    private void OnDrawGizmosSelected()
+    {
+        // Draw detection range
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, detectionRange);
+
+        // Draw attack range
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, attackRange);
+
+        // Draw patrol points and connections
+        if (patrolPoints != null && patrolPoints.Length > 1)
+        {
+            Gizmos.color = Color.blue;
+            for (int i = 0; i < patrolPoints.Length; i++)
+            {
+                if (patrolPoints[i] != null)
+                {
+                    // Draw patrol point
+                    Gizmos.DrawWireSphere(patrolPoints[i].position, 0.5f);
+
+                    int nextIndex = (i + 1) % patrolPoints.Length;
+                    if (patrolPoints[nextIndex] != null)
+                    {
+                        Gizmos.DrawLine(patrolPoints[i].position, patrolPoints[nextIndex].position);
+                    }
+                }
+            }
+        }
+    }
 }
