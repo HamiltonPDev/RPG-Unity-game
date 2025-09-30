@@ -1,4 +1,5 @@
 using System.Runtime.CompilerServices;
+using NUnit.Framework;
 using UnityEngine;
 
 public class EnemyAI : MonoBehaviour
@@ -52,6 +53,35 @@ public class EnemyAI : MonoBehaviour
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
 
         // State machine logic
+    }
+
+    /* Handle patrol behavior - move between patrol points */
+    private void HandlePatrolState(float distanceToPlayer)
+    {
+
+        // check if player is in detection range
+        if (distanceToPlayer <= detectionRange) ChangeState(EnemyState.Chase);
+
+        // Move towards current patrol point
+        if (patrolPoints.Length > 0)
+        {
+            Vector2 targetPosition = patrolPoints[currentPatrolIndex].position;
+        }
+    }
+    /* Move towards a target position */
+    private void MoveTowards(Vector2 targetPosition, float speed)
+    {
+        Vector2 direction = (targetPosition - (Vector2)transform.position).normalized;
+        enemyRigidbody.linearVelocity = direction * speed;
+    }
+
+    /* Change AI state */
+    private void ChangeState(EnemyState newState)
+    {
+        currentState = newState;
+
+        // reset timers when changing state
+        if (newState == EnemyState.Idle) waitTime = 0f;
     }
 
     /*  Create default points if none are set */
