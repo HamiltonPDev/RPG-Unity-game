@@ -15,16 +15,16 @@ public class PlayerController : MonoBehaviour
     private const string lastVertical = "LastVertical";
     private const string walkingState = "Walking";
     private const string attackingState = "Attacking";
-    
+
     // Components
     private Animator animator;
     private Rigidbody2D playerRigidbody2D;
 
-    /* If the player is created */
+    [Header("Player Created")]
     public static bool playerCreated;
     public string nextPlaceName;
 
-    /* Attacking variables */
+    [Header("Attacking")]
     private bool attacking = false;
     public float attackTime;
     private float attackTimeCounter;
@@ -55,9 +55,9 @@ public class PlayerController : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && !attacking) // this prevent multiple attacks at the same time
         {
             attacking = true;
-            attackTimeCounter = attackTime; 
+            attackTimeCounter = attackTime;
             playerRigidbody2D.linearVelocity = UnityEngine.Vector2.zero; // Stop the player movement
-            animator.SetBool(attackingState, true); 
+            animator.SetBool(attackingState, true);
         }
 
         if (attacking)
@@ -82,7 +82,7 @@ public class PlayerController : MonoBehaviour
                 playerRigidbody2D.linearVelocity = lastMovement.normalized * speed; // Move the player
             }
         }
-        
+
         if (!walking) playerRigidbody2D.linearVelocity = UnityEngine.Vector2.zero;
         // Update the animator parameters based on input
         animator.SetFloat("Horizontal", Input.GetAxisRaw(horizontalInput));
