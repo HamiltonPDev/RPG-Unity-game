@@ -92,7 +92,36 @@ public class EnemyAI : MonoBehaviour
     /* Handle attack behavior - stop and attack */
     private void HandleAttackState(float distanceToPlayer)
     {
+        // Stop moving when attacking
+        enemyRigidbody.linearVelocity = Vector2.zero;
 
+        // If the player moves away, return to chase
+        if (distanceToPlayer > attackRange * 1.2f) ChangeState(EnemyState.Chase);
+
+        /* attacking logic would go here (animation, damage dealing, etc)
+            for now, just stay in attack state.
+        */
+    }
+
+    /* Handle Idle behavior - wait at patrol point */
+    private void HandleIdleState(float distanceToPlayer)
+    {
+        // Check if player is in detection range
+        if (distanceToPlayer <= detectionRange) ChangeState(EnemyState.Chase);
+
+        // Stop movement
+        enemyRigidbody.linearVelocity = Vector2.zero;
+
+        // Wait at patrol point 
+        waitTimer += Time.deltaTime;
+        if (waitTimer >= waitTime)
+        {
+
+            // Move to next patrol point
+            currentPatrolIndex = (currentPatrolIndex + 1) % patrolPoints.Length;
+            waitTimer = 0f;
+            ChangeState(EnemyState.Patrol);
+        }
     }
 
     /* Move towards a target position */

@@ -32,7 +32,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>(); // Get the Animator component
-        playerRigidbody2D = GetComponent<Rigidbody2D>(); // Get the Rigidbody2D component
+        playerRigidbody2D = GetComponent<Rigidbody2D>();
 
         if (!playerCreated) // If the player is created
         {
