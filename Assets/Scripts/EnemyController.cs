@@ -2,6 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+    This is a learning script to handle enemy behavior and random movement. I don't use it anymore.
+*/
+
 
 /* This script controls the enemy character randomly */
 public class EnemyController : MonoBehaviour

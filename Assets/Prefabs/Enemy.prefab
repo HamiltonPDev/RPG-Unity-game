@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 1352414345492892524}
   - component: {fileID: 7954833188940646315}
   - component: {fileID: 4455593305967000124}
-  - component: {fileID: 1014090027588807991}
   - component: {fileID: 3124878004831135777}
   - component: {fileID: 4038716503702116280}
   - component: {fileID: 8024072185034122238}
@@ -182,22 +181,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &1014090027588807991
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 408298985329036158}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35fa619a427144eea8be33d0dbb6165c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemySpeed: 1
-  timeBetweenSteps: 2
-  timeToMakeStep: 1.5
-  directionToMakeStep: {x: 0, y: 0}
 --- !u!114 &3124878004831135777
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -318,7 +301,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   detectionRange: 5
   chaseSpeed: 3
-  attackRange: 1.5
+  patrolSpeed: 1
+  attackRange: 0.5
   patrolPoints: []
   waitTime: 2
 --- !u!1 &5931637364951394333
