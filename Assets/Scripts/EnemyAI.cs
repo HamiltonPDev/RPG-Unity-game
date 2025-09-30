@@ -5,13 +5,14 @@ using UnityEngine;
 public class EnemyAI : MonoBehaviour
 {
     [Header("AI Detection Settings")]
-    public float detectionRange = 5f;
-    public float chaseSpeed = 3f;
-    public float attackRange = 1.5f;
+    public float detectionRange = 5f; // How far the enemy can see the player
+    public float chaseSpeed = 3f; // Speed when chasing player
+    public float patrolSpeed = 1f; // Speed when patrolling
+    public float attackRange = 1.5f; // Distance to start attacking
 
     [Header("Patrol Settings")]
-    public Transform[] patrolPoints;
-    public float waitTime = 2f;
+    public Transform[] patrolPoints; // Points to patrol between
+    public float waitTime = 2f; // Time to wait at each patrol point
 
     private Transform player; // Reference to the player
     private Rigidbody2D enemyRigidbody; // Reference to the enemy's rigidbody
@@ -66,6 +67,7 @@ public class EnemyAI : MonoBehaviour
         if (patrolPoints.Length > 0)
         {
             Vector2 targetPosition = patrolPoints[currentPatrolIndex].position;
+            MoveTowards(targetPosition, patrolSpeed);
         }
     }
     /* Move towards a target position */
