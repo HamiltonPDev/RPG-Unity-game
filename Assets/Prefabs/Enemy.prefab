@@ -299,10 +299,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cae0087bab464a44974d04789e33f31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  detectionRange: 5
+  detectionRange: 3
   chaseSpeed: 3
   patrolSpeed: 1
-  attackRange: 0.5
+  attackRange: 0.4
   patrolPoints: []
   waitTime: 2
 --- !u!1 &5931637364951394333

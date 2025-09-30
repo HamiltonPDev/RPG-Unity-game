@@ -1,6 +1,7 @@
 using System.Runtime.CompilerServices;
 using NUnit.Framework;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class EnemyAI : MonoBehaviour
 {
@@ -19,6 +20,12 @@ public class EnemyAI : MonoBehaviour
     private int currentPatrolIndex = 0; // Index of the current patrol point
     private float waitTimer = 0f; // timer for waiting at patrol points 
 
+    // Enemy variables from the animator
+    private Animator enemyAnimator; // animato component of the enemy
+    private const string horizontal = "Horizontal";
+    private const string vertical = "Vertical";
+    private const string attackingEnemyState = "Attacking";
+
     /* AI States */
     private enum EnemyState
     {
@@ -33,6 +40,7 @@ public class EnemyAI : MonoBehaviour
     {
         // Get components
         enemyRigidbody = GetComponent<Rigidbody2D>();
+        enemyAnimator = GetComponent<Animator>();
 
         // Find the player by tag
         GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
@@ -84,6 +92,12 @@ public class EnemyAI : MonoBehaviour
             Vector2 targetPosition = patrolPoints[currentPatrolIndex].position;
             MoveTowards(targetPosition, patrolSpeed);
 
+            // UPDATE animator for patrol movement
+            Vector2 direction = (targetPosition - (Vector2)transform.position).normalized;
+            enemyAnimator.SetFloat(horizontal, direction.x);
+            enemyAnimator.SetFloat(vertical, direction.y);
+
+            // Check if reached patrol point
             if (Vector2.Distance(transform.position, targetPosition) < 0.5f)
             {
                 ChangeState(EnemyState.Idle);
@@ -102,6 +116,11 @@ public class EnemyAI : MonoBehaviour
 
         // Chase the player
         MoveTowards(player.position, chaseSpeed);
+
+        // Animator for chase movement
+        Vector2 direction = (player.position - transform.position).normalized;
+        enemyAnimator.SetFloat(horizontal, direction.x);
+        enemyAnimator.SetFloat(vertical, direction.y);
     }
 
     /* Handle attack behavior - stop and attack */
@@ -110,12 +129,15 @@ public class EnemyAI : MonoBehaviour
         // Stop moving when attacking
         enemyRigidbody.linearVelocity = Vector2.zero;
 
+        // Animator for attacking
+        /* No direction needed because enemy is not moving*/
+        enemyAnimator.SetFloat(horizontal, 0f);
+        enemyAnimator.SetFloat(vertical, 0f);
+        enemyAnimator.SetBool(attackingEnemyState, true); // Trigger attack animation
+
+
         // If the player moves away, return to chase
         if (distanceToPlayer > attackRange * 1.2f) ChangeState(EnemyState.Chase);
-
-        /* attacking logic would go here (animation, damage dealing, etc)
-            for now, just stay in attack state.
-        */
     }
 
     /* Handle Idle behavior - wait at patrol point */
@@ -126,6 +148,10 @@ public class EnemyAI : MonoBehaviour
 
         // Stop movement
         enemyRigidbody.linearVelocity = Vector2.zero;
+
+        // Animator for Idle state
+        enemyAnimator.SetFloat(horizontal, 0f);
+        enemyAnimator.SetFloat(vertical, 0f);
 
         // Wait at patrol point 
         waitTimer += Time.deltaTime;
@@ -148,6 +174,10 @@ public class EnemyAI : MonoBehaviour
     /* Change AI state */
     private void ChangeState(EnemyState newState)
     {
+        if (currentState == EnemyState.Attack && newState != EnemyState.Attack)
+        {
+            enemyAnimator.SetBool(attackingEnemyState, false);
+        }
         currentState = newState;
 
         // reset timers when changing state
