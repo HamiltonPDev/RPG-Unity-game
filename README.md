@@ -30,7 +30,7 @@ studenten tussen 15-18 jaar.
 
 ## Opdracht A: Documentatie van het Proces
 
--   📃 [Logboek](Docs/Opdracht-a/) - Dagelijks werkproces.
+-   📃 [Logboek](Docs/Opdracht-a/LOGBOEK.pdf) - Dagelijks werkproces.
 -   🔗 Git Repository: [Commits](https://github.com/HamiltonPDev/RPG-Unity-game/commits/main/).
 -   💻 Code Commentaar - Te vinden in alle scripts in `Assets/Scripts`.
 
@@ -59,7 +59,7 @@ studenten tussen 15-18 jaar.
 
 ### Geïmplementeerd volgens MoSCoW Blacklog methode:
 
-⚠️ MUSTS (5/6 - 8.3%)
+⚠️ MUSTS (5/6 - 80%)
 
 1. ✅ Game kan worden gestart
 2. ✅ Speler kan game/karakters besturen (WASD/Arrow keys)
