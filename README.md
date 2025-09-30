@@ -59,19 +59,19 @@ studenten tussen 15-18 jaar.
 
 ### Geïmplementeerd volgens MoSCoW Blacklog methode:
 
-✅ MUSTS (6/6 - 100%)
+⚠️ MUSTS (5/6 - 8.3%)
 
 1. ✅ Game kan worden gestart
 2. ✅ Speler kan game/karakters besturen (WASD/Arrow keys)
-3. ⚠️ Speler kan winnen (basis geïmplementeerd, moet getest)
-4. ⚠️ Speler kan verliezen (basis geïmplementeerd, moet getest)
+3. ✅ Speler kan winnen (health = 0 triggers defeat)
+4. ✅ Speler kan verliezen (all enemies defeated)
 5. ✅ Game kan opnieuw worden gestart
 6. ❌ Best Education B.V. branding (naam, logo, slogan) - NOG TE DOEN
 
-⚠️ SHOULDS (1/2 - 50%)
+✅ SHOULDS (2/2 - 100%)
 
 1. ✅ Score bijhouden - NOG TE DOEN
-2. ❌ Toenemende moeilijkheidsgraad - NOG TE DOEN
+2. ✅ Toenemende moeilijkheidsgraad (enemy scaling per level + AI difficulty)
 
 ❌ COULDS (0/2 - Niet gepland)
 
@@ -82,17 +82,17 @@ studenten tussen 15-18 jaar.
 
 1. Online multiplayer
 
-### Technische Features
+#### Technische Features
 
--   Real-time combat met damage calculations
--   Intelligent enemy AI met patrol patterns
--   Smooth player movement en controls
--   Dynamic spawn system voor enemies
--   Scene management en transitions
--   Health en score tracking
--   Health management voor player en enemies
--   UI elementen voor health bar en score display
--   UI system voor stats display
+-   **Real-time combat** met damage calculations en defense system
+-   **Advanced Enemy AI** met state machine (Patrol → Chase → Attack)
+-   **Smooth player movement** met normalized velocity
+-   **Dynamic enemy scaling** (health + damage per player level)
+-   **Scene management** met seamless transitions
+-   **Experience system** met level progression
+-   **Health management** voor player en enemies met I-frames
+-   **UI system** voor stats display (health, XP, strength, defense)
+-   **Visual feedback** (damage numbers, blood effects, flashing)
 
 ## Installatie & Uitvoeren
 
