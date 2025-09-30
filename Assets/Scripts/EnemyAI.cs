@@ -46,6 +46,12 @@ public class EnemyAI : MonoBehaviour
 
     void Update()
     {
+        if (player == null) return; // safety check
+
+        // Calculate distance to player
+        float distanceToPlayer = Vector2.Distance(transform.position, player.position);
+
+        // State machine logic
     }
 
     /*  Create default points if none are set */
