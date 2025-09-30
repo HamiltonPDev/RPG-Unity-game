@@ -17,7 +17,7 @@ public class EnemyAI : MonoBehaviour
     private Transform player; // Reference to the player
     private Rigidbody2D enemyRigidbody; // Reference to the enemy's rigidbody
     private int currentPatrolIndex = 0; // Index of the current patrol point
-    private float waitCounter = 0f; // Counter for the wait time
+    private float waitTimer = 0f; // timer for waiting at patrol points 
 
     /* AI States */
     private enum EnemyState
@@ -68,8 +68,33 @@ public class EnemyAI : MonoBehaviour
         {
             Vector2 targetPosition = patrolPoints[currentPatrolIndex].position;
             MoveTowards(targetPosition, patrolSpeed);
+
+            if (Vector2.Distance(transform.position, targetPosition) < 0.5f)
+            {
+                ChangeState(EnemyState.Idle);
+            }
         }
     }
+
+    /* Handle chase behavior - pursue the player */
+    private void HandleChaseState(float distanceToPlayer)
+    {
+        // If player is too far, return to patrol
+        if (distanceToPlayer > detectionRange * 1.5f) ChangeState(EnemyState.Patrol);
+
+        // If close enough to attack
+        if (distanceToPlayer <= attackRange) ChangeState(EnemyState.Attack);
+
+        // Chase the player
+        MoveTowards(player.position, chaseSpeed);
+    }
+
+    /* Handle attack behavior - stop and attack */
+    private void HandleAttackState(float distanceToPlayer)
+    {
+
+    }
+
     /* Move towards a target position */
     private void MoveTowards(Vector2 targetPosition, float speed)
     {
@@ -83,7 +108,7 @@ public class EnemyAI : MonoBehaviour
         currentState = newState;
 
         // reset timers when changing state
-        if (newState == EnemyState.Idle) waitTime = 0f;
+        if (newState == EnemyState.Idle) waitTimer = 0f;
     }
 
     /*  Create default points if none are set */
