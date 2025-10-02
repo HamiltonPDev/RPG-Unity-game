@@ -2,7 +2,7 @@
 **K0788 - Basis Programmeren van Games**
 
 **Student:** Hamilton Posada  
-**Datum:** 30 september 2025  
+**Datum:** 02 oktober 2025  
 **Project:** RPG Unity Game voor Best Education B.V.
 
 ---
