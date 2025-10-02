@@ -395,11 +395,11 @@
 4. **Camera fix** - voor visuele polish
 5. **Best Education B.V. branding** - voor MUST #6
 
-**Geschatte tijd voor v1.1:** ~6 uur
-- Game Over/Victory screens: 2 uur
-- Audio implementation: 2 uur
-- Camera fix: 1 uur
-- Branding: 1 uur
+**Geschatte tijd voor v1.1:** ~twee dagen
+- Game Over/Victory screens:
+- Audio implementation:
+- Camera fix:
+- Branding:
 
 ---
 
@@ -457,7 +457,7 @@
 - [ ] Final build maken voor Windows/Mac - 0.5 uur
 - [ ] README update met test resultaten - 0.5 uur
 
-**Geschatte tijd tot oplevering:** ~7 uur
+**Geschatte tijd tot oplevering:** ~nog te bepalen
 
 **Game Status:** **IN DEVELOPMENT** - Core gameplay solid, needs UI/UX polish
 
