@@ -46,8 +46,8 @@ studenten tussen 15-18 jaar.
 
 ## Opdracht D: Presentatie en Overdracht
 
--   📃 [Overdrachtsdocument](Docs/Opdracht-d/) - Handleiding voor developer
--   📊 [Presentatie](Docs/Opdracht-d/) - Eindpresentatie van het project
+-   📃 [Overdrachtsdocument](Docs/Opdracht-d/Overdrachtsdocument.md) - Handleiding voor developer
+-   📊 **Presentatie** - Eindpresentatie van het project
 
 ## Technische Specificaties
 
