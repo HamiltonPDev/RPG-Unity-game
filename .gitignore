@@ -102,3 +102,6 @@ InitTestScene*.unity*
 *.gitignore
 *.vscode
 *.DS_Store
+
+# Claude local
+CLAUDE.local.md
