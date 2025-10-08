@@ -3,7 +3,6 @@
 **Basis Programmeren van Games**
 
 -   **Student:** Hamilton Posada
--   **Studentnummer:** [Voeg toe indien nodig]
 -   **Opleiding:** Bit Academy - Game Development
 -   **Examen Code:** K0788
 -   **Datum Oplevering:** 8 oktober 2025
