@@ -242,17 +242,3 @@ Deze folder bevat alle examendocumentatie georganiseerd volgens de opdrachten A 
 **Unique Feature:** Spanish Learning System (83% vocabulary retention verified)
 
 ---
-
-## 📞 CONTACT
-
-**Student:** Hamilton Posada
-**Opleiding:** Bit Academy - Game Development
-**Examen:** K0788 - Basis Programmeren van Games
-**Client:** Best Education B.V.
-**Repository:** https://github.com/HamiltonPDev/RPG-Unity-game
-
----
-
-**KLAAR VOOR INLEVERING!** 🎓🎮
-
-**Laatste Update:** 8 oktober 2025
