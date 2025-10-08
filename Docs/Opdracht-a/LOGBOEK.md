@@ -209,7 +209,7 @@ Dit project is ontwikkeld over een periode van 1 maand met intensieve developmen
 
 ---
 
-### SEPTEMBER 2025 - Dag 15 (30 september) - ENEMY AI COMPLETION DAY
+### SEPTEMBER 2025 - Dag 30 (30 september) - ENEMY AI COMPLETION DAY
 
 **Commits:** 11
 **Tijd besteed:** 8 uur
@@ -255,7 +255,7 @@ Dit was technisch het moeilijkste onderdeel van het hele project. Gelukt om in �
 
 ---
 
-### OKTOBER 2025 - Week 1 (8 oktober) - SPANISH LEARNING SYSTEM & BRANDING
+### OKTOBER 2025 - Week 1 (1 - 8 oktober) - SPANISH LEARNING SYSTEM & BRANDING
 
 **Commits:** ~15
 **Tijd besteed:** ~6 uur
@@ -350,11 +350,11 @@ Het hybride detection systeem (triggers + proximity) geeft flexibility voor vers
 
 ---
 
-### OKTOBER 2025 - Dag 16 (8 oktober) - FINAL POLISH & TIMER FEATURE
+### OKTOBER 2025 - Dag 8 (8 oktober) - FINAL POLISH & TIMER FEATURE
 
 **Commits:** ~5
 **Tijd besteed:** ~2 uur
-**Status:** 🎓 **EXAM READY** - Final touches completed
+**Status:** 🎓 **READY** - Final touches completed
 
 #### Final Implementation:
 
@@ -408,8 +408,6 @@ Het hybride detection systeem (triggers + proximity) geeft flexibility voor vers
 -   **COULDS:** 0/2 - Niet vereist
 -   **WOULDS:** 0/1 - Niet vereist
 
-### 🎓 GAME STATUS: **EXAM READY** ✅
-
 ---
 
 ## REFLECTIE EINDPROJECT
@@ -419,7 +417,7 @@ Dit project heeft een complete transformatie ondergaan:
 -   **Week 1-3:** Basic gameplay mechanics (movement, combat, stats)
 -   **Week 4:** Enemy AI state machine (game-changer)
 -   **Week 5:** Spanish learning system + branding (unique differentiator)
--   **Week 6:** Timer polish + final bug fixes (production-ready)
+-   **Week 6:** Timer polish + final bug fixes
 
 ### Wat maakt deze game uniek:
 
@@ -445,4 +443,3 @@ Dit project heeft een complete transformatie ondergaan:
 
 **Total Development Time:** ~6 weken (30 aug - 8 okt)
 **Total Commits:** ~70+
-**Final Game Rating:** 8/10 (exam ready, professional quality)
