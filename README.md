@@ -56,7 +56,7 @@ studenten tussen 15-18 jaar.
 **Status:** Alle MoSCoW requirements voltooid (100%)
 **Development Time:** 6 weken (30 augustus - 8 oktober 2025)
 **Total Commits:** 70+
-**Game Rating:** 8/10 (Professional Quality)
+**Game Rating:** 8/10
 
 ## Technische Specificaties
 
