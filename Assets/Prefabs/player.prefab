@@ -47,6 +47,7 @@ GameObject:
   - component: {fileID: 9194257401910288653}
   - component: {fileID: 2819107133153190315}
   - component: {fileID: 6541688967727040429}
+  - component: {fileID: 2720434160671414425}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -274,6 +275,25 @@ MonoBehaviour:
   hpLevels: c8000000dc000000f0000000130100002c010000450100006801000090010000c2010000f4010000
   strengthLevels: 00000000000000000100000002000000020000000300000003000000030000000500000006000000
   defenseLevels: 00000000010000000100000001000000020000000200000002000000030000000400000005000000
+--- !u!114 &2720434160671414425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2522609223093068175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f40149c6b78bc41c9ae5df06dc561c05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spanishName: Jugador
+  englishName: Player
+  showOnProximity: 1
+  displayDistance: 1
+  showBranding: 1
+  displayTimer: 3
+  cooldownTimer: 5
 --- !u!1 &5129822460070063728
 GameObject:
   m_ObjectHideFlags: 0

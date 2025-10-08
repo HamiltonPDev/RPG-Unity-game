@@ -49,28 +49,35 @@ studenten tussen 15-18 jaar.
 -   📃 [Overdrachtsdocument](Docs/Opdracht-d/Overdrachtsdocument.md) - Handleiding voor developer
 -   📊 **Presentatie** - Eindpresentatie van het project
 
+## 🎓 Game Status: EXAM READY ✅
+
+**Datum Oplevering:** 8 Oktober 2025
+**Versie:** v1.1 (Final)
+**Status:** Alle MoSCoW requirements voltooid (100%)
+
 ## Technische Specificaties
 
 -   **Unity Versie:** 6000.1.10f1
-<!-- - **Platform:** [Windows/Mac/WebGL] -->
+-   **Platform:** Windows/Mac (Unity Standalone)
 -   **Programmeertaal:** C#
+-   **Development Periode:** 30 augustus - 8 oktober 2025 (6 weken)
 
 ## Game Features
 
 ### Geïmplementeerd volgens MoSCoW Blacklog methode:
 
-⚠️ MUSTS (5/6 - 80%)
+✅ MUSTS (6/6 - 100% VOLTOOID!)
 
 1. ✅ Game kan worden gestart
 2. ✅ Speler kan game/karakters besturen (WASD/Arrow keys)
 3. ✅ Speler kan winnen (health = 0 triggers defeat)
 4. ✅ Speler kan verliezen (all enemies defeated)
 5. ✅ Game kan opnieuw worden gestart
-6. ❌ Best Education B.V. branding (naam, logo, slogan) - NOG TE DOEN
+6. ✅ Best Education B.V. branding (naam, logo, slogan) - **VOLTOOID!**
 
 ✅ SHOULDS (2/2 - 100%)
 
-1. ✅ Score bijhouden - NOG TE DOEN
+1. ✅ Score bijhouden (XP systeem)
 2. ✅ Toenemende moeilijkheidsgraad (enemy scaling per level + AI difficulty)
 
 ❌ COULDS (0/2 - Niet gepland)
@@ -82,10 +89,16 @@ studenten tussen 15-18 jaar.
 
 1. Online multiplayer
 
+### ⭐ Unique Selling Point
+
+**Spanish Learning Feature** - Deze game onderscheidt zich van andere RPG's door educatieve waarde toe te voegen. Spelers leren Spaanse vocabulaire tijdens gameplay door interactie met game objects. Perfect voor de doelgroep 15-18 jaar van Best Education B.V.!
+
+**Smart Timer System:** Labels voor de player tonen 3 seconden en verdwijnen automatisch (5 seconden cooldown) - non-intrusive UX. Enemies en tilemap objects blijven zichtbaar voor betere informatieverstrekking.
+
 #### Technische Features
 
 -   **Real-time combat** met damage calculations en defense system
--   **Advanced Enemy AI** met state machine (Patrol → Chase → Attack)
+-   **Advanced Enemy AI** met state machine (Patrol → Chase → Attack → Idle)
 -   **Smooth player movement** met normalized velocity
 -   **Dynamic enemy scaling** (health + damage per player level)
 -   **Scene management** met seamless transitions
@@ -93,6 +106,11 @@ studenten tussen 15-18 jaar.
 -   **Health management** voor player en enemies met I-frames
 -   **UI system** voor stats display (health, XP, strength, defense)
 -   **Visual feedback** (damage numbers, blood effects, flashing)
+-   **🎓 Spanish Learning System** met Best Education B.V. branding
+-   **Dual detection modes** (triggers + proximity) voor object labeling
+-   **Educational UI** met Spanish/English translations op 20+ objects
+-   **Smart Timer System** voor player labels (3s display, 5s cooldown)
+-   **Professional branding** met Best Education B.V. logo image
 
 ## Installatie & Uitvoeren
 
