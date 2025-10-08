@@ -36,7 +36,7 @@ De game is ontwikkeld voor **Best Education B.V.** om hun imago te verjongen en 
 ## 🎮 Game Status
 
 -   **Versie:** v1.1 (Final)
--   **Status:** ✅ EXAM READY
+-   **Status:** ✅ READY
 -   **MoSCoW:** 6/6 MUSTS + 2/2 SHOULDS (100%)
 -   **Rating:** 8/10 (Professional quality)
 -   **Development:** 6 weken, 70+ commits
@@ -112,11 +112,11 @@ Dit is niet zomaar een RPG - het is een **educational tool** die Spaans leren co
 
 ## 📊 Development Timeline
 
-| Version | Date      | Status                | Key Feature                                   |
-| ------- | --------- | --------------------- | --------------------------------------------- |
-| v0.9    | 1-25 Sept | Not Playable (4/10)   | Basic gameplay + random enemy movement        |
-| v1.0    | 30 Sept   | Playable (7/10)       | Enemy AI State Machine implemented            |
-| v1.1    | 8 Oct     | **EXAM READY (8/10)** | Spanish Learning + Branding + Timer System ⭐ |
+| Version | Date      | Status              | Key Feature                                   |
+| ------- | --------- | ------------------- | --------------------------------------------- |
+| v0.9    | 1-25 Sept | Not Playable (4/10) | Basic gameplay + random enemy movement        |
+| v1.0    | 30 Sept   | Playable (7/10)     | Enemy AI State Machine implemented            |
+| v1.1    | 8 Oct     | **READY (8/10)**    | Spanish Learning + Branding + Timer System ⭐ |
 
 ---
 

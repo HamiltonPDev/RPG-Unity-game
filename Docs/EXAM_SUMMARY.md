@@ -23,7 +23,7 @@
 -   **Version:** v1.1 (Final)
 -   **Platform:** Windows/Mac (Unity Standalone)
 -   **Unity Version:** 6000.1.10f1
--   **Status:** ✅ EXAM READY
+-   **Status:** ✅ READY
 
 ---
 
@@ -68,7 +68,7 @@
     -   Chronologisch overzicht per week
     -   Commit logs met timestamps
     -   Reflecties en technische achievements
-    -   Final status: EXAM READY
+    -   Final status: READY
 -   ✅ **Git Repository** - Actieve commits van 30 aug - 8 okt 2025
 -   ✅ **Code Commentaar** - In alle scripts in `Assets/Scripts/`
 
@@ -168,11 +168,11 @@ Dit is niet zomaar een RPG - het is een **educational tool** die Spaans leren co
 
 ### Timeline
 
-| Version | Date      | Status         | Key Feature                            | Fun Rating |
-| ------- | --------- | -------------- | -------------------------------------- | ---------- |
-| v0.9    | 1-25 Sept | Not Playable   | Basic gameplay + random enemy movement | 4/10       |
-| v1.0    | 30 Sept   | Playable       | Enemy AI State Machine implemented     | 7/10       |
-| v1.1    | 8 Oct     | **EXAM READY** | Spanish Learning + Branding + Timer ⭐ | 8/10       |
+| Version | Date      | Status       | Key Feature                            | Fun Rating |
+| ------- | --------- | ------------ | -------------------------------------- | ---------- |
+| v0.9    | 1-25 Sept | Not Playable | Basic gameplay + random enemy movement | 4/10       |
+| v1.0    | 30 Sept   | Playable     | Enemy AI State Machine implemented     | 7/10       |
+| v1.1    | 8 Oct     | **READY**    | Spanish Learning + Branding + Timer ⭐ | 8/10       |
 
 ### Work Statistics
 
@@ -233,7 +233,7 @@ Dit is niet zomaar een RPG - het is een **educational tool** die Spaans leren co
 
 ## 🎓 FINAL ASSESSMENT
 
-### Game Status: EXAM READY ✅
+### Game Status: READY ✅
 
 **Strengths:**
 
@@ -249,7 +249,7 @@ Dit is niet zomaar een RPG - het is een **educational tool** die Spaans leren co
 **What Makes This Different:**
 Dit is niet zomaar een RPG game voor een examen - het is een **educational tool** die Spaans leren combineert met engaging gameplay. Perfect voor Best Education B.V.'s doelgroep (15-18 jaar) en mission statement.
 
-**Final Rating:** 8/10 (Professional quality, exam ready)
+**Final Rating:** 8/10 (Professional quality, READY)
 
 **Optional Future Improvements:**
 

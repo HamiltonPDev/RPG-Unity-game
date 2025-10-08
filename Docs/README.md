@@ -31,7 +31,7 @@ Deze folder bevat alle examendocumentatie georganiseerd volgens de opdrachten A 
     -   70+ commits gedocumenteerd
     -   Chronologisch per week (30 aug - 8 okt)
     -   Reflecties en technical achievements
-    -   Final status: EXAM READY
+    -   Final status: READY
 
 ### Git Repository
 
@@ -159,11 +159,11 @@ Deze folder bevat alle examendocumentatie georganiseerd volgens de opdrachten A 
 
 ## 📊 DEVELOPMENT TIMELINE
 
-| Version | Date      | Status                | Key Feature                            | Fun Rating |
-| ------- | --------- | --------------------- | -------------------------------------- | ---------- |
-| v0.9    | 1-25 Sept | Not Playable (4/10)   | Basic gameplay + random enemy movement | 4/10       |
-| v1.0    | 30 Sept   | Playable (7/10)       | Enemy AI State Machine implemented     | 7/10       |
-| v1.1    | 8 Oct     | **EXAM READY (8/10)** | Spanish Learning + Branding + Timer ⭐ | 8/10       |
+| Version | Date      | Status              | Key Feature                            | Fun Rating |
+| ------- | --------- | ------------------- | -------------------------------------- | ---------- |
+| v0.9    | 1-25 Sept | Not Playable (4/10) | Basic gameplay + random enemy movement | 4/10       |
+| v1.0    | 30 Sept   | Playable (7/10)     | Enemy AI State Machine implemented     | 7/10       |
+| v1.1    | 8 Oct     | **READY (8/10)**    | Spanish Learning + Branding + Timer ⭐ | 8/10       |
 
 ---
 
