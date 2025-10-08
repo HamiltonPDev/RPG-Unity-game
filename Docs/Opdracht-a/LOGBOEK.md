@@ -2,12 +2,12 @@
 
 **Basis Programmeren van Games**
 
-**Student:** Hamilton Posada
-**Opleiding:** Bit Academy
-**Ontwikkelperiode:** 30 augustus 2025 – 8 oktober 2025
-**Totale ontwikkeltijd:** 6 weken
-**GitHub:** https://github.com/HamiltonPDev/RPG-Unity-game
-**Totaal commits:** 70+
+-   **Student:** Hamilton Posada
+-   **Opleiding:** Bit Academy
+-   **Ontwikkelperiode:** 30 augustus 2025 – 8 oktober 2025
+-   **Totale ontwikkeltijd:** 6 weken
+-   **GitHub:** https://github.com/HamiltonPDev/RPG-Unity-game
+-   **Totaal commits:** 70+
 
 ---
 
