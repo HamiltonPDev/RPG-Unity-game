@@ -2,12 +2,12 @@
 
 **Basis Programmeren van Games**
 
-**Student:** Hamilton Posada
-**Studentnummer:** [Voeg toe indien nodig]
-**Opleiding:** Bit Academy - Game Development
-**Examen Code:** K0788
-**Datum Oplevering:** 8 oktober 2025
-**Project:** RPG Unity Game voor Best Education B.V.
+-   **Student:** Hamilton Posada
+-   **Studentnummer:** [Voeg toe indien nodig]
+-   **Opleiding:** Bit Academy - Game Development
+-   **Examen Code:** K0788
+-   **Datum Oplevering:** 8 oktober 2025
+-   **Project:** RPG Unity Game voor Best Education B.V.
 
 ---
 
@@ -252,7 +252,7 @@ Dit is niet zomaar een RPG game voor een examen - het is een **educational tool*
 
 **Final Rating:** 8/10 (Professional quality, exam ready)
 
-**Optional Future Improvements (not required for exam):**
+**Optional Future Improvements:**
 
 -   [ ] Game Over/Victory screens met styled UI (core logic works)
 -   [ ] Background music (atmosphere)
